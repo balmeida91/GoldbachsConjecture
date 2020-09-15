@@ -43,7 +43,7 @@ function isPrime(n) {
 
   for (var potentialDivisor = 2; potentialDivisor < n; potentialDivisor++) {
 
-    if (n % potentialDivisor === 0) {
+    if (Math.sqrt(n) % potentialDivisor === 0) {
       return false;
     }
   }
